@@ -38,7 +38,7 @@ function findMovie(slug) {
   }
 }
 
-app.use(express.static('/'));
+app.use(express.static(__dirname + '/'));
 
 app.get('/', function(request, response) {
   response.redirect('/movies');
